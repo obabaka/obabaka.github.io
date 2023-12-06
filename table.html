@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+</head>
+<body bgcolor="lightgrey">
+    <a href="car.html">Японские автомобили</a><br>
+    <a href="table.html">Список японских автомобилей</a><br>
+    <hr>
+    <form>
+    <details>
+        <summary>График</summary>
+        <table>
+            <tr><th>Значение по оси OX</th>
+                <th>Результат</th></tr>
+            <tr><td><input type="radio">Производитель</td><td><input type="checkbox">Максимальная мощность двигателя</td></tr>
+            <tr><td><input type="radio">Год</td><td><input type="checkbox">Минимальная мощность двигателя</td></tr>
+            <tr><td><input type="radio">Мощность двигателя</td><td><input type="checkbox">Максимальная масса</td></tr>
+        </table><br>
+        <input type="button" value="Построить">
+    </details><br>
+    <details>
+        <summary>Фильтр</summary>
+            <p>
+                <label>Производитель: <input type="text"></label>
+            </p>
+            <p>
+                <label>Название модели: <input type="text"></label>
+            </p>
+        <p>
+            <label>Год: от <input type="number" min="1980" max="2024"> до <input type="number" min="1980" max="2024"></label>
+        </p>
+        <p>
+            <label>Мощность двигателя: от <input type="number" min="0" max="1000"> до <input type="number" min="0" max="1000"></label>
+        </p>
+        <p>
+            <label>Масса: от <input type="number" min="0" max="5000"> до <input type="number" min="0" max="5000"></label>
+        </p>
+        <input type="button" value="Найти">
+    </details><br>
+    <details>
+        <summary>Сортировка</summary>
+        <p>
+            <label>Первый уровень:
+                <select width="20">
+                    <option value="0">Да</option>
+                    <option value="1" selected>Нет</option>
+                </select>
+                по убыванию?<input type="checkbox">
+            </label>
+        </p>
+        <p>
+            <label>Второй уровень:
+                <select width="20">
+                    <option value="0">Да</option>
+                    <option value="1" selected>Нет</option>
+                </select>
+                по убыванию?<input type="checkbox">
+            </label>
+        </p>
+        <p>
+            <label>Третий уровень:
+                <select width="20">
+                    <option value="0">Да</option>
+                    <option value="1" selected>Нет</option>
+                </select>
+                по убыванию?<input type="checkbox">
+            </label>
+        </p>
+        <input type="button" value="Сортировать">
+    </details><br>
+    </form>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr><th>№</th>
+        <th>Фото</th>
+        <th>Производитель</th>
+        <th>Название модели</th>
+        <th>Год</th>
+        <th>Мощность<br>Двигателя(л.с.)</th>
+            <th>Масса(кг)</th></tr>
+        <tr>
+            <td>1</td>
+            <td><img src="images\skyline.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>Skyline</td>
+            <td>1999</td>
+            <td>155</td>
+            <td>1560</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><img src="images\mark21.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>MarkII</td>
+            <td>1996</td>
+            <td>130</td>
+            <td>1330</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><img src="images\supra1.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Supra</td>
+            <td>1993</td>
+            <td>225</td>
+            <td>1430</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><img src="images\lancer1.jpg" width="150"></td>
+            <td>Mitsubishi</td>
+            <td>Lancer</td>
+            <td>2000</td>
+            <td>130</td>
+            <td>1275</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><img src="images\rx71.jpg" width="150"></td>
+            <td>Mazda</td>
+            <td>RX-7</td>
+            <td>1992</td>
+            <td>255</td>
+            <td>1280</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><img src="images\civic1.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>1996</td>
+            <td>130</td>
+            <td>1123</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><img src="images\impreza.jpg" width="150"></td>
+            <td>Subaru</td>
+            <td>Impreza</td>
+            <td>2000</td>
+            <td>160</td>
+            <td>1300</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><img src="images\silvia.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>Silvia</td>
+            <td>1999</td>
+            <td>165</td>
+            <td>1240</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><img src="images\inspire.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Inspire</td>
+            <td>1998</td>
+            <td>200</td>
+            <td>1550</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="images\crown.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Crown</td>
+            <td>1997</td>
+            <td>140</td>
+            <td>1390</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><img src="images\galant.jpg" width="150"></td>
+            <td>Mitsubishi</td>
+            <td>Galant</td>
+            <td>1996</td>
+            <td>135</td>
+            <td>1290</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td><img src="images\legacy.jpg" width="150"></td>
+            <td>Subaru</td>
+            <td>Legacy</td>
+            <td>1998</td>
+            <td>137</td>
+            <td>1320</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td><img src="images\gs2.jpg" width="150"></td>
+            <td>Lexus</td>
+            <td>GS</td>
+            <td>1997</td>
+            <td>225</td>
+            <td>1649</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td><img src="images\trueno.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Trueno</td>
+            <td>1983</td>
+            <td>130</td>
+            <td>900</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td><img src="images\eclipse.jpg" width="150"></td>
+            <td>Mitsubishi</td>
+            <td>Eclipse</td>
+            <td>1983</td>
+            <td>156</td>
+            <td>1420</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td><img src="images\accord.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>1997</td>
+            <td>140</td>
+            <td>1230</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td><img src="images\celica.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Celica</td>
+            <td>1999</td>
+            <td>143</td>
+            <td>1215</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td><img src="images\s2000.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>S2000</td>
+            <td>1999</td>
+            <td>208</td>
+            <td>1240</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td><img src="images\240sx.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>240SX</td>
+            <td>1989</td>
+            <td>143</td>
+            <td>1298</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="images\laurel.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>Laurel</td>
+            <td>1989</td>
+            <td>150</td>
+            <td>1400</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td><img src="images\chaser.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Chaser</td>
+            <td>1996</td>
+            <td>160</td>
+            <td>1480</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td><img src="images\cresta.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Cresta</td>
+            <td>1996</td>
+            <td>140</td>
+            <td>1410</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td><img src="images\forester.jpg" width="150"></td>
+            <td>Subaru</td>
+            <td>Forester</td>
+            <td>1997</td>
+            <td>137</td>
+            <td>1320</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td><img src="images\integra.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Integra</td>
+            <td>1993</td>
+            <td>170</td>
+            <td>1160</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td><img src="images\350z.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>350Z</td>
+            <td>2002</td>
+            <td>280</td>
+            <td>1537</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td><img src="images\gtr.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>GT-R</td>
+            <td>2007</td>
+            <td>480</td>
+            <td>1740</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td><img src="images\camry.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2017</td>
+            <td>181</td>
+            <td>1570</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td><img src="images\prius.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Prius</td>
+            <td>2009</td>
+            <td>99</td>
+            <td>1380</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td><img src="images\cx5.jpg" width="150"></td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2012</td>
+            <td>150</td>
+            <td>1365</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td><img src="images\vezel.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Vezel</td>
+            <td>2013</td>
+            <td>130</td>
+            <td>1180</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td><img src="images\outlander.jpg" width="150"></td>
+            <td>Mitsubishi</td>
+            <td>Outlander</td>
+            <td>2012</td>
+            <td>146</td>
+            <td>1985</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td><img src="images\jimny.jpg" width="150"></td>
+            <td>Suzuki</td>
+            <td>Jimny</td>
+            <td>2012</td>
+            <td>88</td>
+            <td>1060</td>
+        </tr>
+        <tr>
+            <td>33</td>
+            <td><img src="images\rav4.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>RAV4</td>
+            <td>2012</td>
+            <td>146</td>
+            <td>1540</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td><img src="images\landc.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Land Cruiser</td>
+            <td>2012</td>
+            <td>232</td>
+            <td>2585</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td><img src="images\fit.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Fit</td>
+            <td>2013</td>
+            <td>100</td>
+            <td>1154</td>
+        </tr>
+        <tr>
+            <td>36</td>
+            <td><img src="images\teana.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>Teana</td>
+            <td>2011</td>
+            <td>182</td>
+            <td>1512</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td><img src="images\legend.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>Legend</td>
+            <td>2008</td>
+            <td>295</td>
+            <td>1848</td>
+        </tr>
+        <tr>
+            <td>38</td>
+            <td><img src="images\pajero.jpg" width="150"></td>
+            <td>Mitsubishi</td>
+            <td>Pajero</td>
+            <td>2006</td>
+            <td>173</td>
+            <td>2110</td>
+        </tr>
+        <tr>
+            <td>39</td>
+            <td><img src="images\juke.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>Juke</td>
+            <td>2011</td>
+            <td>117</td>
+            <td>1194</td>
+        </tr>
+        <tr>
+            <td>40</td>
+            <td><img src="images\alphard.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Alphard</td>
+            <td>2011</td>
+            <td>275</td>
+            <td>2105</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td><img src="images\chr.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>CH-R</td>
+            <td>2016</td>
+            <td>148</td>
+            <td>1495</td>
+        </tr>
+        <tr>
+            <td>42</td>
+            <td><img src="images\crz.jpg" width="150"></td>
+            <td>Honda</td>
+            <td>CRZ</td>
+            <td>2010</td>
+            <td>114</td>
+            <td>1160</td>
+        </tr>
+        <tr>
+            <td>43</td>
+            <td><img src="images\xtrail.jpg" width="150"></td>
+            <td>Nissan</td>
+            <td>X-Trail</td>
+            <td>2013</td>
+            <td>130</td>
+            <td>1675</td>
+        </tr>
+        <tr>
+            <td>44</td>
+            <td><img src="images\mazda6.jpg" width="150"></td>
+            <td>Mazda</td>
+            <td>6</td>
+            <td>2012</td>
+            <td>150</td>
+            <td>1340</td>
+        </tr>
+        <tr>
+            <td>45</td>
+            <td><img src="images\corolla.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Corolla</td>
+            <td>2012</td>
+            <td>122</td>
+            <td>1270</td>
+        </tr>
+        <tr>
+            <td>46</td>
+            <td><img src="images\levorg.jpg" width="150"></td>
+            <td>Subaru</td>
+            <td>Levorg</td>
+            <td>2014</td>
+            <td>170</td>
+            <td>1540</td>
+        </tr>
+        <tr>
+            <td>47</td>
+            <td><img src="images\brz.jpg" width="150"></td>
+            <td>Subaru</td>
+            <td>BRZ</td>
+            <td>2012</td>
+            <td>200</td>
+            <td>1256</td>
+        </tr>
+        <tr>
+            <td>48</td>
+            <td><img src="images\is.jpg" width="150"></td>
+            <td>Lexus</td>
+            <td>IS</td>
+            <td>2013</td>
+            <td>208</td>
+            <td>1555</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td><img src="images\rx350.jpg" width="150"></td>
+            <td>Lexus</td>
+            <td>RX350</td>
+            <td>2012</td>
+            <td>277</td>
+            <td>2160</td>
+        </tr>
+        <tr>
+            <td>50</td>
+            <td><img src="images\fielder.jpg" width="150"></td>
+            <td>Toyota</td>
+            <td>Fielder</td>
+            <td>2012</td>
+            <td>109</td>
+            <td>1120</td>
+        </tr>
+    </table>
+</body>
+</html>
